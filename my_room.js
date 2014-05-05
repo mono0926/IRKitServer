@@ -7,6 +7,6 @@ const
 for (var a in localApi) {
     console.log(a);
 }
-localApi.postMessages(myRoomLightMessage, function(err) {
-
+localApi.postMessages(myRoomLightMessage, function(err, res) {
+    console.log(res); //空
 });
